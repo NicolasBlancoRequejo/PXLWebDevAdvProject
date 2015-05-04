@@ -5,6 +5,7 @@
 body {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
+        background-color: #fff;
 }
 
 .well .page-header {
@@ -20,6 +21,16 @@ ul.unstyled {
 	padding: 0;
 }
 
+footer {
+	background: #000;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+
+#banner{
+    margin-top: 75px;
+}
 
 /* --------------------------------------
    Navbar
@@ -32,6 +43,9 @@ ul.unstyled {
 
 .navbar{
     background-color: #000;
+    border-bottom: solid 1px #f9fafc;
+    -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.1);
 }
 .navbar-brand {
 	padding: 13px 15px;
@@ -42,11 +56,22 @@ ul.unstyled {
   background-color: #FF2B06;
 }
 
-.btn-default {
+.btn-default,.btn-primary {
   color: #fff;
   background-color: #FF2B06;
   border-color: #FF2B06;
 }
+
+.btn-primary:hover,.btn-primary:active{
+  background-color: #333333;;
+  border-color: #333333;;
+}
+
+.navbar-nav>li>a{
+      color: #fff;
+
+}
+
    
 
 /* --------------------------------------
@@ -54,7 +79,7 @@ ul.unstyled {
    -------------------------------------- */
 
 #myCarousel {
-	margin-top: 60px;
+	margin-top: 75px;
 }
 
 .carousel-caption {
@@ -65,18 +90,18 @@ ul.unstyled {
 	font-size: 32px;
 }
 
-#myCarousel .item { height: 400px; }
+#myCarousel .item { height: 317px; }
 
 #slide1 {
-	background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
+	background: url('../images/carousel_medium_02.jpg') top center no-repeat;
 }
 
 #slide2 {
-	background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
+	background: url('../images/carousel_medium_02.jpg') top center no-repeat;
 }
 
 #slide3 {
-	background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
+	background: url('../images/carousel_medium_02.jpg') top center no-repeat;
 }
 
 
@@ -147,25 +172,21 @@ ul.unstyled {
 }
 
 /* Landscape phone to portrait tablet */
-@media (min-width: 1200px){
-        .container {
-          max-width: 960px;
-        }
-}
-@media (max-width: 768px) {
+
+@media (max-width: 760px) {
 	
-	#myCarousel .item { height: 310px; }
+	#myCarousel .item { height: 288px; }
 	
 	#slide1 {
-		background: url('../../images/carousel_small_01.jpg') top center no-repeat;
+		background: url('../images/carousel_small_02.jpg') top center no-repeat;
 	}
 	
 	#slide2 {
-		background: url('../../images/carousel_small_02.jpg') top center no-repeat;
+		background: url('../images/carousel_small_02.jpg') top center no-repeat;
 	}
 	
 	#slide3 {
-		background: url('../../images/carousel_small_03.jpg') top center no-repeat;
+		background: url('../images/carousel_small_02.jpg') top center no-repeat;
 	}
 	
 	.carousel-caption {
@@ -179,20 +200,25 @@ ul.unstyled {
 }
 
 /* Large desktop */
-@media (min-width: 1200px) {
 
-	#myCarousel .item { height: 500px; }
+@media (min-width: 980px) {
+    
+        .container {
+          max-width: 960px;
+        }
+
+	#myCarousel .item { height: 400px; }
 	
 	#slide1 {
-		background: url('../../images/carousel_large_01.jpg') top center no-repeat;
+		background: url('../images/carousel_large_01.jpg') top center no-repeat;
 	}
 	
 	#slide2 {
-		background: url('../../images/carousel_large_02.jpg') top center no-repeat;
+		background: url('../images/carousel_large_01.jpg') top center no-repeat;
 	}
 	
 	#slide3 {
-		background: url('../../images/carousel_large_03.jpg') top center no-repeat;
+		background: url('../images/carousel_large_01.jpg') top center no-repeat;
 	}
 
 }
