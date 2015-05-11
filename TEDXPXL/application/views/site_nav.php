@@ -14,11 +14,39 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">News</a></li>                           
-                        <li><a href="#">TEDXPXL</a></li>                           
-                        <li><a href="#">About</a></li>    
+                        <li><a href="#">Forum</a></li>                           
+                        <li><a href="#">Events</a></li>    
                         <li><a href="#">Contact</a></li>                           
 
 
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" href="#" data-toggle="dropdown">Log In <strong class="caret"></strong></a>
+                          <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                               <?php
+
+                                echo form_open('site/login_validation');
+
+                                        echo validation_errors();
+
+                                        echo "<p>Email: <br />";
+                                        echo form_input('email');
+                                        echo "</p>";
+
+                                        echo "<p>Password: <br />";
+                                        echo form_password('password');
+                                        echo "</p>";
+
+                                        echo "<p>";
+                                        echo form_submit('login_submit', 'Login','class="btn btn-default"');
+                                        echo "</p>";
+
+                                echo form_close();
+
+                                ?>
+                          </div>
+                        </li>
                     </ul>
 
                     <form class="navbar-form pull-left">

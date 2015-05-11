@@ -13,8 +13,8 @@
                                         <ul class="unstyled">
                                             <li><a href="#">Home</a></li>
                                             <li><a href="#">News</a></li>                           
-                                            <li><a href="#">TEDXPXL</a></li>                           
-                                            <li><a href="#">About</a></li>    
+                                            <li><a href="#">Forum</a></li>                           
+                                            <li><a href="#">Events</a></li>    
                                             <li><a href="#">Contact</a></li> 
                                         </ul>
                                 </div>
