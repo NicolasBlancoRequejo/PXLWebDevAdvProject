@@ -1,7 +1,7 @@
 <div id="banner">
     <div class="thumbnails row">
         <div class="thumbnail">
-            <img src="images/carousel_large_01.jpg" alt="PSD to HTML5 & CSS3">
+            <img id="bannerImage" alt="tedxpxl banner">
                 <div class="caption">
                         <h2>We zijn steeds op zoek naar nieuwe leden!</h2>
 
