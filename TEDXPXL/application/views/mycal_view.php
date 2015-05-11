@@ -8,10 +8,10 @@
 		.calendar {
 			font-family: 'Open Sans',sans-serif;
 			font-size: 12px;
+			border: 3px #AB0505 solid;
 		}
 		table.calendar {
-			margin: auto;
-			
+			margin: auto;			
 		}
 		.calendar .days td {
 			width: 180px;
@@ -22,17 +22,34 @@
 			background-color: #808080;	
 			text-align: center;
 			vertical-align: middle;
-
 		}
 		.calendar .days td:hover {
 			background-color: #FF2B06;
 		}
 		.calendar .highlight {
-			font-weight: bold;
-			color: #00F;
+			color: #AB0505;
+			font-size: 40px;
 		}
-		.today {
-			text-align: left;
+		.day_num {
+			font-size: 25px;
+			color: white;
+		}
+		.neprcell {
+			font-size: 15px;
+			color: white;
+		}
+		.weekdays {
+			font-size: 15px;
+			text-align: center;
+			background-color: #AB0505;
+			color: white;
+		}
+		.title {
+			font-size: 30px;
+		}
+		.heading {
+			background-color: #AB0505;
+			color: white;
 		}
 	</style>
 
