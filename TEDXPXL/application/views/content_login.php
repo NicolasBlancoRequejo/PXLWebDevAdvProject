@@ -30,6 +30,8 @@
         
         ?>
         
+        <a href='<?php echo base_url()."main/signup"; ?>'>Registreer!</a>
+        
     </div>
 </body>
 </html>

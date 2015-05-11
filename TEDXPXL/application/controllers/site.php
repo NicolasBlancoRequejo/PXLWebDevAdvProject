@@ -22,6 +22,10 @@ class Site extends CI_Controller {
 		$this->load->view('content_login');
 	}
 	
+        public function signup(){
+            $this->load->view('signup');
+        }
+        
 	public function members(){
 		if($this->session->userdata('is_logged_in')){
 			$this->load->view('members');

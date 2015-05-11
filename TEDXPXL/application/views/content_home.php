@@ -7,7 +7,7 @@
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-                        <p><a href="#" class="btn btn-primary btn-neutral" target="_blank">Lid Worden</a></p>
+                        <p><a href="<?php echo base_url()."main/signup"; ?>" class="btn btn-primary btn-neutral" target="_blank">Lid Worden</a></p>
                 </div>
         </div>
 
