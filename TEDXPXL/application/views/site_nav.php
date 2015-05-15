@@ -22,6 +22,38 @@
                     </ul>
                     <ul class="nav pull-right">
                         <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">Registreer<strong class="caret"></strong></a>
+                            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                                <?php
+                                echo form_open('site/signup_validation');
+
+                                echo validation_errors();
+
+                                echo "<p>Email: ";
+                                echo form_input('email', $this->input->post('email'));
+                                echo "</p>";
+
+                                echo "<p>Wachtwoord: ";
+                                echo form_password('password');
+                                echo "</p>";
+
+                                echo "<p>Bevestig wachtwoord: ";
+                                echo form_password('cpassword');
+                                echo "</p>";
+
+                                echo "<p>";
+                                echo form_submit('signup_submit', 'Registreer','class="btn btn-default"');
+                                echo "</p>";
+
+                                echo form_close();
+                                ?>
+                            </div>
+                        </li>
+                    </ul>
+
+                    
+                    <ul class="nav pull-right">
+                        <li class="dropdown">
                           <a class="dropdown-toggle" href="#" data-toggle="dropdown">Log In <strong class="caret"></strong></a>
                           <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
                                <?php
@@ -31,7 +63,7 @@
                                         echo validation_errors();
 
                                         echo "<p>Email: <br />";
-                                        echo form_input('email');
+                                        echo form_input('email',$this->input->post('email'));
                                         echo "</p>";
 
                                         echo "<p>Password: <br />";
@@ -48,7 +80,6 @@
                           </div>
                         </li>
                     </ul>
-
                     <form class="navbar-form pull-left">
                         <input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
                         <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
