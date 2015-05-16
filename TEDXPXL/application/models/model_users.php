@@ -46,9 +46,9 @@
                   
                   if($temp_user){
                       $row = $temp_user->row();
-                      
+                      $email = $row->email;
                       $data = array(
-                          'email' => $row->email,
+                          'email' => $email,
                           'password' => $row->password
                       );
                       
@@ -58,7 +58,7 @@
                   if($did_add_user){
                       $this->db->where('key', $key);
                       $this->db->delete('temp_users');
-                      return true;
+                      return $email;
                   }else return false;
                 }
 	}
