@@ -118,5 +118,12 @@ class Site extends CI_Controller {
         $this->session->sess_destroy();
         redirect('site/login');
     }
+    
+    public function register_user($key){
+        $this->load->model('model_users');
+        if($this->model_users->is_key_valid($key)){
+            echo "VALID KEY!";
+        }else echo "INVALID KEY!";
+    }
 
 }

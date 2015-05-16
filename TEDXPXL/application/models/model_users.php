@@ -30,6 +30,15 @@
                         return false;
                     }
                 }
+                
+                public function is_key_valid($key){
+                    $this->db->where('key',$key);
+                    $query = $this->db->get('temp_users');
+                    
+                    if($query->num_rows() == 1){
+                        return true;
+                    }else return false;
+                }
 	}
 ?>
 	
