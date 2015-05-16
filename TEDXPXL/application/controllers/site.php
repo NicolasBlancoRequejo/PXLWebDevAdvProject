@@ -122,7 +122,9 @@ class Site extends CI_Controller {
     public function register_user($key){
         $this->load->model('model_users');
         if($this->model_users->is_key_valid($key)){
-            echo "VALID KEY!";
+            if($this->model_users->add_user($key)){
+                echo "Success";
+            }else echo "Failed add user";
         }else echo "INVALID KEY!";
     }
 
