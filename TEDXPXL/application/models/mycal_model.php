@@ -30,7 +30,7 @@
 			
 			{cal_row_start}<tr class="days">{/cal_row_start}
 			{cal_cell_start}<td class="day">{/cal_cell_start}
-			{cal_cell_start_today}<td class="today">{/cal_cell_start_today}
+			{cal_cell_start_today}<td class="today day">{/cal_cell_start_today}
 			{cal_cell_start_other}<td class="other-month">{/cal_cell_start_other}
 			
 			{cal_cell_content}
