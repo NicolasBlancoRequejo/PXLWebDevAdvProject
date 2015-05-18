@@ -1,0 +1,8 @@
+Dear %usr_fname% %usr_lname%,
+
+Welkom op onze site. Uw paswoord is:
+
+%password%
+
+Met vriendelijke groet,
+TEDXPXL
