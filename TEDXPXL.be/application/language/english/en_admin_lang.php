@@ -53,6 +53,7 @@ $lang['usr_town_city'] = "Town/City";
 $lang['usr_zip_pcode'] = "Zip/Postal Code";
 $lang['usr_access_level'] = "User Access Level";
 $lang['is_active'] = "User is active?";
+$lang['usr_profilepic'] = "Profile Picture";
 
 // Forgot password
 $lang['forgot_pwd_success_heading'] = "Email Sent:";
