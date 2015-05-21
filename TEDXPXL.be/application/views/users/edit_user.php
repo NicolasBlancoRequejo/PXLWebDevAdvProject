@@ -66,6 +66,11 @@
 	      <input type="radio" name="usr_is_active" <?php if ($usr_is_active == 1) { echo 'checked' ;} ?> /> Active
 	      <input type="radio" name="usr_is_active" <?php if ($usr_is_active == 0) { echo 'checked' ;} ?> /> Inactive
 	    </div>
+            <div class="form-group">
+	    	<?php echo form_error('usrprofilepic'); ?>
+	      <label id="usr_access_level" for="usr_profilepic"><?php echo $this->lang->line('usr_profilepic');?></label>
+	      <?php echo form_dropdown('usr_profilepic', $usr_access_level_options, $usr_profilepic); ?>
+	    </div>
 
 	    <?php echo form_hidden($id); ?>
 
