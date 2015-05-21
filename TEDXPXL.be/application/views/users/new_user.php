@@ -64,7 +64,12 @@
       <label for="usr_is_active"><?php echo $this->lang->line('usr_is_active');?></label>
       <input type="radio" name="usr_is_active" value="<?php echo set_value('usr_is_active') ; ?>" /> Active
       <input type="radio" name="usr_is_active" value="<?php echo set_value('usr_is_active') ; ?>" /> Inactive
-     </div>      
+     </div>
+      
+      <div class="form-group">
+      <label for="usr_profilepic"><?php echo $this->lang->line('usr_profilepic');?></label>
+      <?php echo form_input($usr_profilepic); ?>
+    </div> 
 
     <div class="form-group">
       <button type="submit" class="btn btn-success"><?php echo $this->lang->line('common_form_elements_go');?></button>  or <? echo anchor('users',$this->lang->line('common_form_elements_cancel'));?>

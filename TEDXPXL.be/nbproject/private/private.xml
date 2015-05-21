@@ -3,7 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/TEDXPXL.be/SQL/tables.sql</file>
+<<<<<<< HEAD
+            <file>file:/C:/xampp/htdocs/TEDXPXL.be/application/views/forum/comments.php</file>
+            <file>file:/C:/xampp/htdocs/TEDXPXL.be/application/controllers/Comments.php</file>
+=======
+            <file>file:/C:/xampp/htdocs/TEDXPXL.be/application/views/nav/top_nav.php</file>
+            <file>file:/C:/xampp/htdocs/TEDXPXL.be/application/views/home/home.php</file>
+            <file>file:/C:/xampp/htdocs/TEDXPXL.be/images/carousel_large_01.jpg</file>
+            <file>file:/C:/xampp/htdocs/TEDXPXL.be/application/views/contact/contact.php</file>
+            <file>file:/C:/xampp/htdocs/TEDXPXL.be/application/views/common/footer.php</file>
+            <file>file:/C:/xampp/htdocs/TEDXPXL.be/bootstrap/css/custom.css</file>
+>>>>>>> 1f6c34a91f219cc467321db7ee29ed613379dfff
         </group>
     </open-files>
 </project-private>

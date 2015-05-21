@@ -23,18 +23,18 @@
 
 <!-- Form - begin form section -->
 <br /><br />
-<p class="lead"><?php echo $this->lang->line('comments_form_instruction');?></p>
+<p class="lead"><?php echo $this->lang->line('comments_form_instruction');?>
 
 <?php echo validation_errors(); ?>
 <?php echo form_open('comments/index','role="form"') ; ?>
-    <div class="form-group col-md-5">
-      <label for="comment_name"><?php echo $this->lang->line('comments_comment_name');?></label>
+    <!--<div class="form-group col-md-5">
+      <label for="comment_name"><?//php echo $this->lang->line('comments_comment_name');?></label>
       <input type="text" name="comment_name" class="form-control" id="comment_name" value="<?php echo set_value('comment_name'); ?>">
     </div>
     <div class="form-group col-md-5">
-      <label for="comment_email"><?php echo $this->lang->line('comments_comment_email');?></label>
+      <label for="comment_email"><?//php echo $this->lang->line('comments_comment_email');?></label>
       <input type="email" name="comment_email" class="form-control" id="comment_email" value="<?php echo set_value('comment_email'); ?>">
-    </div>
+    </div>-->
     <div class="form-group  col-md-10">
       <label for="comment_body"><?php echo $this->lang->line('comments_comment_body');?></label>
       <textarea class="form-control" rows="3" name="comment_body" id="comment_body"><?php echo set_value('comment_body'); ?></textarea>

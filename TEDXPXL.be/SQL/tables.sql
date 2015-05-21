@@ -26,6 +26,7 @@ usr_access_level int(2) NOT NULL COMMENT 'up to 99',
 usr_is_active int(1) NOT NULL COMMENT '1 (active) or 0 (inactive)',
 usr_created_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 usr_pwd_change_code varchar(50) NOT NULL,
+usr_profilepic varchar(255) NOT NULL,
 PRIMARY KEY (usr_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 DROP TABLE IF EXISTS comments;
