@@ -1,9 +1,9 @@
-﻿-- phpMyAdmin SQL Dump
+-- phpMyAdmin SQL Dump
 -- version 4.2.11
 -- http://www.phpmyadmin.net
 --
 -- Machine: 127.0.0.1
--- Gegenereerd op: 18 mei 2015 om 12:17
+-- Gegenereerd op: 21 mei 2015 om 20:22
 -- Serverversie: 5.6.21
 -- PHP-versie: 5.6.3
 
@@ -23,13 +23,26 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `calendar`
+-- Tabelstructuur voor tabel `events`
 --
 
-CREATE TABLE IF NOT EXISTS `calendar` (
-  `date` date NOT NULL,
-  `data` text NOT NULL
+CREATE TABLE IF NOT EXISTS `events` (
+  `naam` varchar(255) NOT NULL,
+  `datum` date NOT NULL,
+  `beginuur` time NOT NULL,
+  `einduur` time DEFAULT NULL,
+  `commentaar` varchar(255) DEFAULT NULL,
+  `locatie` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `events`
+--
+
+INSERT INTO `events` (`naam`, `datum`, `beginuur`, `einduur`, `commentaar`, `locatie`) VALUES
+('Presentatie basic security', '2015-05-22', '11:10:00', '11:40:00', '', ''),
+('Presentatie web project', '2015-05-26', '10:40:00', '11:10:00', 'Succes jongens!', 'Elfde-Liniestraat 24, Hasselt, Belgium'),
+('VWclub België Meeting', '2015-05-30', '10:00:00', '18:00:00', 'Polo''s, Golf''s, Passat''s,... Allemaal welkom!', 'C-Mine, Genk, Belgium');
 
 -- --------------------------------------------------------
 
@@ -67,10 +80,10 @@ INSERT INTO `users` (`id`, `email`, `password`) VALUES
 --
 
 --
--- Indexen voor tabel `calendar`
+-- Indexen voor tabel `events`
 --
-ALTER TABLE `calendar`
- ADD PRIMARY KEY (`date`);
+ALTER TABLE `events`
+ ADD PRIMARY KEY (`naam`), ADD FULLTEXT KEY `commentaar` (`commentaar`);
 
 --
 -- Indexen voor tabel `temp_users`

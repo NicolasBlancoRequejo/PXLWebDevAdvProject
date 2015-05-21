@@ -15,7 +15,7 @@
                                             <li><a href="<?php echo base_url("home"); ?>">Home</a></li>
                                             <!--<li><a href="#">News</a></li> -->                      
                                             <li><a href="<?php echo base_url("discussions"); ?>">Forum</a></li>                           
-                                            <li><a href="#">Events</a></li>    
+                                            <li><a href="<?php echo base_url("mycal/showcal"); ?>">Events</a></li>    
                                             <li><a href="<?php echo base_url("contact"); ?>">Contact</a></li> 
                                         </ul>
                                 </div>
