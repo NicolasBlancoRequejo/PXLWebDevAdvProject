@@ -1,5 +1,5 @@
-CREATE DATABASE user_auth;
-USE user_auth;
+CREATE DATABASE tedxpxl;
+USE tedxpxl;
 CREATE TABLE ci_sessions (
 session_id varchar(40) COLLATE utf8_bin NOT NULL DEFAULT '0',
 ip_address varchar(16) COLLATE utf8_bin NOT NULL DEFAULT '0',

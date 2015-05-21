@@ -5,6 +5,7 @@ class Comments extends MY_Controller {
         parent::__construct();
         $this->load->helper('string');
         $this->load->library('form_validation');
+        $this->load->library('session');
         $this->load->model('Discussions_model');
         $this->load->model('Comments_model');
         $this->form_validation->set_error_delimiters('<div class="alert alert-danger">', '</div>');        
@@ -22,8 +23,8 @@ class Comments extends MY_Controller {
         $page_data['ds_id'] = $ds_id;
 
         $this->form_validation->set_rules('ds_id', $this->lang->line('comments_comment_hidden_id'), 'required|min_length[1]|max_length[11]');
-        $this->form_validation->set_rules('comment_name', $this->lang->line('comments_comment_name'), 'required|min_length[1]|max_length[25]');
-        $this->form_validation->set_rules('comment_email', $this->lang->line('comments_comment_email'), 'required|min_length[1]|max_length[255]');
+        //$this->form_validation->set_rules('comment_name', $this->lang->line('comments_comment_name'), 'required|min_length[1]|max_length[25]');
+        //$this->form_validation->set_rules('comment_email', $this->lang->line('comments_comment_email'), 'required|min_length[1]|max_length[255]');
         $this->form_validation->set_rules('comment_body', $this->lang->line('comments_comment_body'), 'required|min_length[1]|max_length[5000]');
 
         if ($this->form_validation->run() == FALSE) { 
@@ -35,6 +36,7 @@ class Comments extends MY_Controller {
             $data = array('cm_body' => $this->input->post('comment_body'),
                           'usr_email' => $this->input->post('comment_email'),
                           'usr_name' => $this->input->post('comment_name'),
+                          'usr_email' => $this->session->userdata('usr_email'),
                           'ds_id' =>  $this->input->post('ds_id')
                           );
 
@@ -43,6 +45,7 @@ class Comments extends MY_Controller {
             } else {
                 // error
                 // load view and flash sess error
+                
             }
         }
     }
