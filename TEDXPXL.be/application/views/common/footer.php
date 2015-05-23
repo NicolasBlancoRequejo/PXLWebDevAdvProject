@@ -6,25 +6,26 @@
                         <div class="row">
                                 <div class="col-sm-8">
                                         <h6>About</h6>
-                                        <p>TEDxPXL is an independently organized TED conference <br />where speakers from around the world share cutting-edge ideas. <br />During the breaks, attendees connect with each other through various interactive activities.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 </div>
 
                                 <div class="col-sm-2">
-                                        <h6>Navigation</h6>
+                                        <h6>Navigatie</h6>
                                         <ul class="unstyled">
-                                            <li><a href="<?php echo base_url("home"); ?>">Home</a></li>
-                                            <!--<li><a href="#">News</a></li> -->                      
-                                            <li><a href="<?php echo base_url("discussions"); ?>">Forum</a></li>                           
-                                            <li><a href="<?php echo base_url("mycal/showcal"); ?>">Events</a></li>    
-                                            <li><a href="<?php echo base_url("contact"); ?>">Contact</a></li> 
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">News</a></li>                           
+                                            <li><a href="#">Forum</a></li>                           
+                                            <li><a href="#">Events</a></li>    
+                                            <li><a href="#">Contact</a></li> 
                                         </ul>
                                 </div>
 
                                 <div class="col-sm-2">
-                                        <h6>Follow us</h6>
+                                        <h6>Volg Ons</h6>
                                         <ul class="unstyled">
-                                                <li><a href="https://twitter.com/hogeschoolpxl">On Twitter</a></li>
-                                                <li><a href="https://www.facebook.com/HogeschoolPXL">On Facebook</a></li>
+                                                <li><a href="#">Twitter</a></li>
+                                                <li><a href="#">Facebook</a></li>
+                                                <li><a href="#">Google Plus</a></li>
                                         </ul>
                                 </div>
                         </div>
