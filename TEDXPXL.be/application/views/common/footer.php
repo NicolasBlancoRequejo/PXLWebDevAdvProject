@@ -36,7 +36,7 @@
 	
 	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
 	
-	<script src="<?php echo base_url('bootstrap/js/bootstrap.min.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
 	
 
 </body>
