@@ -104,11 +104,11 @@
 									document.getElementById('editButton').style.display = "";
 									document.getElementById('deleteButton').style.display = "";
 								}
-								$.get('http://localhost/TEDXPXL/mycal/getStartTime/'+encodeURI(day_data), function(data){$('#h3beginuur').text("Start time: " + data)});
-								$.get('http://localhost/TEDXPXL/mycal/getEndTime/'+encodeURI(day_data), function(data){$('#h3einduur').text("End time: " + data)});
-								$.get('http://localhost/TEDXPXL/mycal/getComment/'+encodeURI(day_data), function(data){$('#h3comment').text("Comment: " + data)});		
-								$.get('http://localhost/TEDXPXL/mycal/getLocation/'+encodeURI(day_data), function(data){$('#h3locatie').text("Location: " + data)});	
-								$.get('http://localhost/TEDXPXL/mycal/getLocation/'+encodeURI(day_data), function(data){$('#h3map-canvas').attr('src', "https://www.google.com/maps/embed/v1/place?key=AIzaSyARMLp4OYW9VYpOvYS_SmSwsb2F2vHEwRY&q=" + data)});	
+								$.get('http://localhost/TEDXPXL.be/mycal/getStartTime/'+encodeURI(day_data), function(data){$('#h3beginuur').text("Start time: " + data)});
+								$.get('http://localhost/TEDXPXL.be/mycal/getEndTime/'+encodeURI(day_data), function(data){$('#h3einduur').text("End time: " + data)});
+								$.get('http://localhost/TEDXPXL.be/mycal/getComment/'+encodeURI(day_data), function(data){$('#h3comment').text("Comment: " + data)});		
+								$.get('http://localhost/TEDXPXL.be/mycal/getLocation/'+encodeURI(day_data), function(data){$('#h3locatie').text("Location: " + data)});	
+								$.get('http://localhost/TEDXPXL.be/mycal/getLocation/'+encodeURI(day_data), function(data){$('#h3map-canvas').attr('src', "https://www.google.com/maps/embed/v1/place?key=AIzaSyARMLp4OYW9VYpOvYS_SmSwsb2F2vHEwRY&q=" + data)});	
 							});
 						</script>
 						<h1 name="eventp" id="eventp"></h1>				
@@ -214,7 +214,7 @@
 							$('#editButton').click(function() {	
 								day_data = $(this).find('#eventp').html();
 								day_data = "PXL breekt uit";
-								$.get('http://localhost/TEDXPXL/mycal/editEvent/'+encodeURI(day_data), function(data){$('#editNaam').val(data); $('#editBeginuur').val()});
+								$.get('http://localhost/TEDXPXL.be/mycal/editEvent/'+encodeURI(day_data), function(data){$('#editNaam').val(data); $('#editBeginuur').val()});
 							});
 						</script>
 						<div class="form-group">
