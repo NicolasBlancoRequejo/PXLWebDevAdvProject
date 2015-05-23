@@ -34,7 +34,6 @@ class Me extends CI_Controller {
     $this->form_validation->set_rules('usr_add3', $this->lang->line('usr_add3'), 'required|min_length[1]|max_length[125]');
     $this->form_validation->set_rules('usr_town_city', $this->lang->line('usr_town_city'), 'required|min_length[1]|max_length[125]');
     $this->form_validation->set_rules('usr_zip_pcode', $this->lang->line('usr_zip_pcode'), 'required|min_length[1]|max_length[125]');
-    $this->form_validation->set_rules('usr_profilepic', $this->lang->line('usr_profilepic'), 'required|min_length[1]|max_length[125]');
     
     $data['id'] = $this->session->userdata('usr_id');
            
@@ -52,7 +51,6 @@ class Me extends CI_Controller {
         $usr_add3 = $row->usr_add3;
         $usr_town_city = $row->usr_town_city;
         $usr_zip_pcode = $row->usr_zip_pcode;
-        $usr_profilepic = $row->usr_profilepic;
       }
 
       $data['usr_fname'] = array('name' => 'usr_fname', 'class' => 'form-control', 'id' => 'usr_fname', 'value' => set_value('usr_fname', $usr_fname), 'maxlength'   => '100', 'size' => '35');
@@ -65,7 +63,6 @@ class Me extends CI_Controller {
       $data['usr_add3'] = array('name' => 'usr_add3', 'class' => 'form-control', 'id' => 'usr_add3', 'value' => set_value('usr_add3', $usr_add3), 'maxlength'   => '100', 'size' => '35');
       $data['usr_town_city'] = array('name' => 'usr_town_city', 'class' => 'form-control', 'id' => 'usr_town_city', 'value' => set_value('usr_town_city', $usr_town_city), 'maxlength'   => '100', 'size' => '35');
       $data['usr_zip_pcode'] = array('name' => 'usr_zip_pcode', 'class' => 'form-control', 'id' => 'usr_zip_pcode', 'value' => set_value('usr_zip_pcode', $usr_zip_pcode), 'maxlength'   => '100', 'size' => '35');
-      $data['usr_profilepic'] = array('name' => 'usr_profilepic', 'class' => 'form-control', 'id' => 'usr_profilepic', 'value' => set_value('usr_profilepic', $usr_profilepic), 'maxlength'   => '100', 'size' => '35');
 
       $this->load->view('common/header', $data);
       $this->load->view('nav/top_nav', $data);
@@ -81,8 +78,7 @@ class Me extends CI_Controller {
           'usr_add2' => $this->input->post('usr_add2'),
           'usr_add3' => $this->input->post('usr_add3'),
           'usr_town_city' => $this->input->post('usr_town_city'),
-          'usr_zip_pcode' => $this->input->post('usr_zip_pcode'),
-          'usr_profilepic' => $this->input->post('usr_profilepic')
+          'usr_zip_pcode' => $this->input->post('usr_zip_pcode')
       );
 
       if ($this->Users_model->process_update_user($id, $data)) {
