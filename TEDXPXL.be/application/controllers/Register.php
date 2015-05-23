@@ -15,9 +15,7 @@ class Register extends CI_Controller {
   }
 
   public function index() {
-      
     // Set validation rules
-    //$this->form_validation->set_rules('captcha', 'Captcha', 'callback_validate_captcha');
     $this->form_validation->set_rules('usr_fname', $this->lang->line('first_name'), 'required|min_length[1]|max_length[125]');
     $this->form_validation->set_rules('usr_lname', $this->lang->line('last_name'), 'required|min_length[1]|max_length[125]');
     $this->form_validation->set_rules('usr_email', $this->lang->line('email'), 'required|min_length[1]|max_length[255]|valid_email|is_unique[users.usr_email]');
@@ -27,10 +25,7 @@ class Register extends CI_Controller {
       $this->load->view('common/header');
       $this->load->view('nav/top_nav');
       $this->load->view('users/register'); 
-      $this->load->view('common/footer');    
-      
-      
-      
+      $this->load->view('common/footer');             
     } else { 
       // Create hash from user password 
       //$password = random_string('alnum', 8); 

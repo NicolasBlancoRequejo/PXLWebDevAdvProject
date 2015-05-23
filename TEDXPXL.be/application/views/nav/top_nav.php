@@ -33,8 +33,8 @@
             <?php else : ?>
                 <li><a href="<?php echo base_url("discussions"); ?>">Forum</a></li>    
             <?php endif ; ?>
-            <li><a href="#">Events</a></li>
-               
+            <li><a href="<?php echo base_url("mycal/showcal"); ?>">Events</a></li>
+            <li class="active"><a href="<?php echo base_url("contact"); ?>">Contact</a></li>
           </ul>
           
           <ul class="nav navbar-nav navbar-right">
@@ -45,10 +45,11 @@
               <li><?php echo anchor(base_url('signin'), $this->lang->line('top_nav_signin')) ; ?></li>
             <?php endif ; ?>
           </ul>
+          <!-- Search functie bestaat nog niet
           <form class="navbar-form pull-left">
             <input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
             <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-          </form>
+          </form> -->
         </div><!--/.nav-collapse -->
       </div>
     </div>

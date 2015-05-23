@@ -12,11 +12,10 @@
 <?php foreach ($comment_query->result() as $comment_result) : ?>
   <li class="media">
     <a class="pull-left" href="#">
-      <!--<img class="media-object" src="<?php echo base_url() ; ?>img/profile.svg" />-->
+      <img class="media-object" src="<?php echo base_url() ; ?>img/profile.svg" />
     </a>
     <div class="media-body">
-      <?php echo $comment_result->usr_name ; // jasonmark ?>
-      <!--<h4 class="media-heading"><?php echo $comment_result->usr_name . anchor('comments/flag/'.$comment_result->ds_id . '/' . $comment_result->cm_id,$this->lang->line('comments_flag')) ; ?></h4>-->
+      <h4 class="media-heading"><?php echo $comment_result->usr_name . anchor('comments/flag/'.$comment_result->ds_id . '/' . $comment_result->cm_id,$this->lang->line('comments_flag')) ; ?></h4>
       <?php echo $comment_result->cm_body ; ?>
     </div>
   </li>
@@ -28,11 +27,11 @@
 
 <?php echo validation_errors(); ?>
 <?php echo form_open('comments/index','role="form"') ; ?>
-    <div class="form-group col-md-5">
-      <label for="comment_name"><?php echo $this->lang->line('comments_comment_name');?></label>
+    <!--<div class="form-group col-md-5">
+      <label for="comment_name"><?//php echo $this->lang->line('comments_comment_name');?></label>
       <input type="text" name="comment_name" class="form-control" id="comment_name" value="<?php echo set_value('comment_name'); ?>">
     </div>
-    <!--<div class="form-group col-md-5">
+    <div class="form-group col-md-5">
       <label for="comment_email"><?//php echo $this->lang->line('comments_comment_email');?></label>
       <input type="email" name="comment_email" class="form-control" id="comment_email" value="<?php echo set_value('comment_email'); ?>">
     </div>-->
