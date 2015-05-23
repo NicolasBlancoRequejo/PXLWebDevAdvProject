@@ -28,7 +28,13 @@
 			if ($this->form_validation->run() == FALSE)
 			{
 				//fail validation
+                                $title['title']="Events Page";
+
+                                $this->load->view('common/header',$title);
+                                $this->load->view('nav/top_nav');
 				$this->load->view('calendar/mycal_view', $data);
+                                $this->load->view('common/footer');   
+
 			}
 			else
 			{    

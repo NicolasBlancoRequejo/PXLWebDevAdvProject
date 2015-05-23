@@ -16,7 +16,7 @@ class Contact extends CI_Controller {
     }
         
     public function index(){
-        $data['title']="Home Page";
+        $data['title']="contact Page";
 
         $this->load->view('common/header',$data);
         $this->load->view('nav/top_nav');
