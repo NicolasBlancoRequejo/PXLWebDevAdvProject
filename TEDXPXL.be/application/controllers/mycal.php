@@ -28,7 +28,7 @@
 			if ($this->form_validation->run() == FALSE)
 			{
 				//fail validation
-				$this->load->view('mycal_view', $data);
+				$this->load->view('calendar/mycal_view', $data);
 			}
 			else
 			{    
@@ -77,7 +77,7 @@
 			$data['beginuur'] = $this->mycal_model->fill_edit_form($naam)["beginuur"];
 			$data['einduur'] = $this->mycal_model->fill_edit_form($naam)["einduur"];
 			$data['commentaar'] = $this->mycal_model->fill_edit_form($naam)["commentaar"];
-			$this->load->view("fillform.php", $data);
+			$this->load->view("calendar/fillform.php", $data);
 		}
 		
 		function delEvent() {
@@ -91,28 +91,28 @@
 			$naam = urldecode(func_get_args()[0]);
 			$this->load->model("mycal_model");
 			$tekst = $this->mycal_model->get_comment($naam)["commentaar"];
-			$this->load->view("toon.php", array("tekst"=>$tekst));
+			$this->load->view("calendar/toon.php", array("tekst"=>$tekst));
 		}
 		
 		function getStartTime() {			
 			$naam = urldecode(func_get_args()[0]);
 			$this->load->model("mycal_model");
 			$tekst = $this->mycal_model->get_starttime($naam)["beginuur"];
-			$this->load->view("toonbeginuur.php", array("tekst"=>$tekst));
+			$this->load->view("calendar/toonbeginuur.php", array("tekst"=>$tekst));
 		}
 		
 		function getEndTime() {			
 			$naam = urldecode(func_get_args()[0]);
 			$this->load->model("mycal_model");
 			$tekst = $this->mycal_model->get_endtime($naam)["einduur"];
-			$this->load->view("tooneinduur.php", array("tekst"=>$tekst));
+			$this->load->view("calendar/tooneinduur.php", array("tekst"=>$tekst));
 		}
 		
 		function getLocation() {			
 			$naam = urldecode(func_get_args()[0]);
 			$this->load->model("mycal_model");
 			$tekst = $this->mycal_model->get_location($naam)["locatie"];
-			$this->load->view("toonlocatie.php", array("tekst"=>$tekst));
+			$this->load->view("calendar/toonlocatie.php", array("tekst"=>$tekst));
 		}
 		
 	}				

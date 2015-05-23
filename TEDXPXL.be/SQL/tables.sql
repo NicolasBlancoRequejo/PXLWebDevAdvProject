@@ -50,3 +50,17 @@ CREATE TABLE discussions (
   ds_is_active int(1) NOT NULL,
   PRIMARY KEY (ds_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `events` (
+  `naam` varchar(255) NOT NULL,
+  `datum` date NOT NULL,
+  `beginuur` time NOT NULL,
+  `einduur` time DEFAULT NULL,
+  `commentaar` varchar(255) DEFAULT NULL,
+  `locatie` varchar(255) NOT NULL
+)
+
+INSERT INTO `events` (`naam`, `datum`, `beginuur`, `einduur`, `commentaar`, `locatie`) VALUES
+('Presentatie web project', '2015-05-26', '10:40:00', '11:10:00', 'Succes jongens!', 'Elfde-Liniestraat 24, Hasselt, Belgium'),
+('VWclub België Meeting', '2015-05-30', '10:00:00', '18:00:00', 'Polo''s, Golf''s, Passat''s,... Allemaal welkom!', 'C-Mine, Genk, Belgium'),
+('Car Meeting', '2015-05-31', '09:00:00', '19:00:00', 'Casa di Munno', 'C-Mine, Genk, Belgium');
