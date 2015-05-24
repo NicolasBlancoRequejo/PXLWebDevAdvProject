@@ -10,8 +10,8 @@ $lang['top_nav_signin'] = "Login";
 $lang['top_nav_signout'] = "Logout";
 $lang['top_nav_profiel'] = "Profiel";
 $lang['top_nav_dashboard'] = "Dashboard";
-$lang['top_nav_create_discussion'] = "create discussion";
-$lang['top_nav_forum'] = "forum";
+$lang['top_nav_create_discussion'] = "Create discussion";
+$lang['top_nav_forum'] = "Forum";
 
 
 // Login

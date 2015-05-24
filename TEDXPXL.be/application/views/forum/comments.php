@@ -43,6 +43,7 @@
     <div class="textfield">
         <?php echo form_label( $captcha, 'captcha' ); ?>
         <?php echo form_error( 'captcha' ); ?>
+        <br>
         <?php echo form_input( 'captcha' ); ?>
     </div>
     <div class="form-group  col-md-11">

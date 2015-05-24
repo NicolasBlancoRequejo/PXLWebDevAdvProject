@@ -15,8 +15,8 @@
               <?php echo anchor(base_url().'comments/index/'.$result->ds_id,$result->ds_title) . ' '
                     . $this->lang->line('comments_created_by') . $result->usr_name; ?>
                     
-              <?php echo anchor('discussions/flag/'.$result->ds_id,
-              $this->lang->line('discussion_flag')) ; ?>
+              <!--<?php echo anchor('discussions/flag/'.$result->ds_id,
+              $this->lang->line('discussion_flag')) ; ?>-->
               <br />
               <?php echo $result->ds_body ; ?>
             </td>
