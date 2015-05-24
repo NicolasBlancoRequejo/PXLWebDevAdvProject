@@ -20,9 +20,6 @@ class Comments extends MY_Controller {
         //$this->form_validation->set_rules('comment_email', $this->lang->line('comments_comment_email'), 'required|min_length[1]|max_length[255]');
         $this->form_validation->set_rules('comment_body', $this->lang->line('comments_comment_body'), 'required|min_length[1]|max_length[5000]');
         $this->form_validation->set_rules('captcha', 'captcha', 'required|callback_check_captcha');
-
-                
-		
         
         if ($this->input->post()) {
             $ds_id = $this->input->post('ds_id');        
