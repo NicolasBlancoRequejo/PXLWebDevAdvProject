@@ -3,9 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/xampp/htdocs/TEDXPXL.be/application/views/forum/comments.php</file>
             <file>file:/C:/xampp/htdocs/TEDXPXL.be/application/models/Comments_model.php</file>
             <file>file:/C:/xampp/htdocs/TEDXPXL.be/application/controllers/Comments.php</file>
+=======
+            <file>file:/C:/xampp/htdocs/TEDXPXL.be/application/views/calendar/mycal_view.php</file>
+            <file>file:/C:/xampp/htdocs/TEDXPXL.be/application/config/config.php</file>
+>>>>>>> 47b8600648b000aa27f3cae0844e3552792ae495
         </group>
     </open-files>
 </project-private>

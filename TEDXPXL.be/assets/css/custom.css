@@ -63,6 +63,7 @@ footer {
 	color: #eee;
 	font-size: 11px;
 	padding: 20px;
+        margin-top: 40px;
 }
 
 #banner{
@@ -340,4 +341,69 @@ footer {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+/*events */
+a, a:focus, a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.calendar {
+font-family: 'Open Sans',sans-serif;
+font-size: 12px;
+border: 3px #000000 solid;
+}
+table.calendar {
+margin: auto;			
+}
+.calendar .days td {
+width: 180px;
+height: 140px;
+padding: 4px;
+border: 3px solid #000;
+vertical-align: top;
+background-color: #fff;	
+text-align: center;
+vertical-align: middle;
+}
+.calendar .days td:hover {
+background-color: #807777;
+color:white;
+}
+.calendar .highlight {
+color: #FF2B06;
+font-weight: bold;
+//font-size: 40px;
+}
+.day_num {
+font-size: 25px;
+color: black;
+}
+.neprcell {
+font-size: 15px;
+text-align: center;
+}
+.weekdays {
+font-size: 15px;
+text-align: center;
+background-color: #000000;
+color: white;
+}
+.title {
+text-align: center;
+font-size: 30px;
+}
+.heading {
+background-color: #FF2B06;
+color: white;
+}
+#autocomplete {
+position: relative;
+margin-left: -172px;
+margin-top: 4px;
+width: 300px;
+}
+.modal {
+z-index: 20;
 }

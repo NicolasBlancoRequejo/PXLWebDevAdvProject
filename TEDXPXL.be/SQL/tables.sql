@@ -51,13 +51,14 @@ CREATE TABLE discussions (
   PRIMARY KEY (ds_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
-CREATE TABLE IF NOT EXISTS `events` (
-  `naam` varchar(255) NOT NULL,
-  `datum` date NOT NULL,
-  `beginuur` time NOT NULL,
-  `einduur` time DEFAULT NULL,
-  `commentaar` varchar(255) DEFAULT NULL,
-  `locatie` varchar(255) NOT NULL
+CREATE TABLE IF NOT EXISTS events (
+  naam varchar(255) NOT NULL,
+  datum date NOT NULL,
+  beginuur time NOT NULL,
+  einduur time DEFAULT NULL,
+  commentaar varchar(255) DEFAULT NULL,
+  locatie varchar(255) NOT NULL
+  PRIMARY KEY (naam)
 )
 
 INSERT INTO `events` (`naam`, `datum`, `beginuur`, `einduur`, `commentaar`, `locatie`) VALUES
