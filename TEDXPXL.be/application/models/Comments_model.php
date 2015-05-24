@@ -27,6 +27,7 @@ class Comments_model extends CI_Model {
         // table, if it does return the primary key, if not create them 
         // a user account and return the primary key.
         $usr_email = $data['usr_email'];
+        $usr_name = $data['usr_name'];
         $query = "SELECT * FROM `users` WHERE `usr_email` = ? ";
         $result = $this->db->query($query,array($usr_email));
 
